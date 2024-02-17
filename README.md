@@ -48,7 +48,7 @@ python3 inference.py --model gpt-4
 ## TODO
 
 - [ ] add all baseline models in inference.py
-- [ ] add gen_data.py
+- [X] add gen_dataset.py
 - [ ] add eval.py
 - [ ] add ablations.py
 
