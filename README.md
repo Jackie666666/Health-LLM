@@ -26,7 +26,9 @@ pip install -r requirements.txt
 
 To run the inference, please download the datasets and checkpoint from the following links:
 
-Checkpoint: [LINK](https://drive.google.com/drive/folders/1JgxlptRjoQLOO3Eg9zv_a8SajW-nYpiA?usp=sharing)
+**Checkpoint** (for HealthAlpaca): [Google Drive](https://drive.google.com/drive/folders/1JgxlptRjoQLOO3Eg9zv_a8SajW-nYpiA?usp=sharing)
+
+**Datasets**
 
 1) PMData: [https://datasets.simula.no/pmdata/](https://datasets.simula.no/pmdata/)
 2) LifeSnaps: [https://github.com/Datalab-AUTH/LifeSnaps-EDA](https://github.com/Datalab-AUTH/LifeSnaps-EDA)
@@ -48,4 +50,5 @@ python3 inference.py --model gpt-4
 - [ ] add all baseline models in inference.py
 - [ ] add gen_data.py
 - [ ] add eval.py
+- [ ] add ablations.py
 
