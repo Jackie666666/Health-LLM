@@ -9,11 +9,7 @@ import google.generativeai as genai
 
 import torch
 import transformers
-from transformers import AutoTokenizer, AutoModelForCausalLM
-from transformers import T5Tokenizer, T5ForConditionalGeneration
-from transformers import AutoTokenizer, AutoModelForCausalLM
-from transformers import AutoModel
-from transformers import pipeline
+from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModel, pipeline
 from transformers import AutoModelForQuestionAnswering
 
 
@@ -85,16 +81,6 @@ def get_response(model, question, seed):
         )
 
         return response.choices[0].text.strip()
-
-    elif model == "Flan-T5":
-        try:
-            input_ids = flan_t5_tokenizer(question, return_tensors="pt").input_ids.to("cuda")
-            outputs = flan_t5_model.generate(input_ids)
-            ans = flan_t5_tokenizer.decode(outputs[0])
-        except Exception as e:
-            ans = "N/A"
-        
-        return ans
 
     elif "medAlpaca" in model:
         try:
