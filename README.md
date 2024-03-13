@@ -39,6 +39,14 @@ To run the inference, please download the datasets and checkpoint from the follo
 
 <br>
 
+## Fine-tune
+
+```bash
+bash finetune.sh
+```
+
+<br>
+
 ## Inference
 
 ```bash
@@ -49,8 +57,8 @@ python3 inference.py --model gpt-4
 
 ## TODO
 
-- [ ] add all baseline models in inference.py
 - [X] add gen_dataset.py
+- [X] add finetune.sh
 - [ ] add eval.py
-- [ ] add ablations.py
+- [ ] add checkpoints in Google Drive
 
